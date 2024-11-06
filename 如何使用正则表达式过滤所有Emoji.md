@@ -11,3 +11,5 @@
 ```
 "包含Emoji的字符串".replaceEmojis("替换Emoji的字符串");
 ```
+出处：
+https://github.com/slevithan/emoji-regex-xs
