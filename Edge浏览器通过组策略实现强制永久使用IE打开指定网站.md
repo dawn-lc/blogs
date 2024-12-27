@@ -15,7 +15,7 @@ Install.cmd
 ```batch
 @ECHO OFF
 SETLOCAL EnableDelayedExpansion
-TITLE 强制网站使用InternetExplorer打开
+TITLE Edge浏览器强制永久使用IE打开指定网站
 
 PUSHD %~dp0 & CD /d "%~dp0"
 %1 %2
@@ -26,7 +26,6 @@ if exist C:\InternetExplorerSiteList.xml (
     echo 功能已启用
     GOTO END
 )
-echo 文件不存在，继续执行其他操作...
 
 <nul set /p=正在添加组策略模板...
 XCOPY PolicyDefinitions C:\Windows\PolicyDefinitions /E /I /Y >nul
@@ -46,12 +45,9 @@ GPUPDATE /force >nul
 ECHO 完成
 
 :END
-ECHO 如需修改强制使用IE打开的网站列表，请编辑C:\InternetExplorerSiteList.xml的内容！
+ECHO 如需修改网站列表，请编辑文件"C:\InternetExplorerSiteList.xml"的内容！
 
-choice /c YN /n /m "按 Y 键打开编辑器，按 N 键退出..."
-if errorlevel 2 (
-     pause >nul
-) else (
-    start notepad C:\InternetExplorerSiteList.xml >nul
-)
+choice /c EQ /n /m "按 E 键打开编辑器，按 Q 键退出..."
+if %errorlevel%==1 start notepad C:\InternetExplorerSiteList.xml >nul
+exit
 ```
