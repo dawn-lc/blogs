@@ -1,11 +1,13 @@
 参考[https://bbs.pcbeta.com/viewthread-1990717-1-1.html](https://bbs.pcbeta.com/viewthread-1990717-1-1.html)实现
 
 下载文件
+
 解压后运行Install.cmd
 
 [EdgeToIE.zip](https://github.com/user-attachments/files/18257016/EdgeToIE.zip)
 
 直接运行版本
+
 [阿里云盘](https://www.alipan.com/s/eNrDX4Ha1F3)
 
 Install.cmd
