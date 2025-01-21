@@ -4,8 +4,7 @@
 
 解压后运行Install.cmd
 
-[EdgeToIE.zip](https://github.com/user-attachments/files/18257308/EdgeToIE.zip)
-
+[EdgeToIE.zip](https://github.com/user-attachments/files/18485958/EdgeToIE.zip)
 
 直接运行版本
 
